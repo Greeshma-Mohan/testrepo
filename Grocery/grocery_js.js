@@ -5,5 +5,6 @@ function calculate_grocery() {
 
     let total_amount = first_grocery_amount + second_grocery_amount + third_grocery_amount;
     
-    document.getElementById('grocery_amount').textContent = `The total amount is: ${total_amount.toFixed(2)}`;
+    document.getElementById('grocery_amount').textContent = "The total amount is: " + total_amount.toFixed(2);
+
 }
