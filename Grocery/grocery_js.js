@@ -4,11 +4,7 @@ function calculate_grocery() {
     let third_grocery_amount = parseFloat(document.getElementById('grocery_amount_3').value) || 0;
 
     let total_amount = first_grocery_amount + second_grocery_amount + third_grocery_amount;
+    
+    document.getElementById('grocery_amount').textContent = "The total amount is: " + total_amount.toFixed(2);
 
-    let totalDisplay = document.getElementById('grocery_amount');
-    if (totalDisplay) {
-        totalDisplay.textContent = "The total amount is: " + total_amount.toFixed(2);
-    } else {
-        console.error("Element with ID 'grocery_amount' not found.");
-    }
 }
