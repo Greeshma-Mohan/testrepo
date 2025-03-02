@@ -14,11 +14,11 @@ function submitFeedback() {
     document.getElementById('userProductChoice').innerHTML = productType;
     document.getElementById('userFeedback').innerHTML = feedback;
     document.getElementById('userInfo').style.display = 'block';
+alert('Thank you for your valuable feedback');
 }
 
 const submitButton=document.getElementById('submitBtn');
 submitButton.onclick = submitFeedback;
-alert('Thank you for your valuable feedback');
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
       submitFeedback();
