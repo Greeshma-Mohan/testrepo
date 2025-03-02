@@ -15,10 +15,10 @@ function submitFeedback() {
     document.getElementById('userProductChoice').innerHTML = productType;
     document.getElementById('userFeedback').innerHTML = feedback;
     document.getElementById('userExperince').innerHTML = userExperince;
-    document.getElementById('userInfo').style.display = 'block';
     alert('Thank you for your valuable feedback');
 }
 
+document.getElementById('userInfo').style.display = 'block';
 const submitButton=document.getElementById('submitBtn');
 submitButton.onclick = submitFeedback;
 document.addEventListener('keydown', function(event) {
